@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/session?useSSL=false
+    username: root
+  session:
+    store-type: jdbc
+    jdbc:
+      initialize-schema: session # Database schema initialization mode.
+      schema: classpath:schema.sql # Path to the SQL file to use to initialize the database schema.
+      table-name: SPRING_SESSION
